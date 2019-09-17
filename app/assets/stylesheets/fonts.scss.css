@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'baskervvilleregular';
+    src: font_url('baskervville-regular-webfont.woff2') format('woff2'),
+         font_url('baskervville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
