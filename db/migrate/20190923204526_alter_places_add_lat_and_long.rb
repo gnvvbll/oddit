@@ -3,4 +3,4 @@ class AlterPlacesAddLatAndLong < ActiveRecord::Migration[6.0]
     add_column: :places, :latitude, :float
     add_column :places, :longitude, :float
   end
-
+end
