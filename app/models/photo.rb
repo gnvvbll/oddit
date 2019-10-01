@@ -11,4 +11,8 @@ class Photo < ApplicationRecord
         add_index :photos, [:user_id, :place_id]
         add_index :photos, :place_id
     end
+
+    class Photo < ActiveRecord::Base
+        mount_uploader :picture, PictureUploader
+    end
 end
