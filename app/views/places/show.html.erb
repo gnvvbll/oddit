@@ -62,10 +62,10 @@
         <div class="modal-body">
           <%= f.input :message %>
           <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-        <%= simple_form_for @photos, url: place_photos_path(@place) do |f| %>
-        <%= f.input :message %>
-        <%= f.input :rating %>
         <%= f.submit "Add a Comment", class: 'btn btn-secondary' %>
+        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+          <%= f.input :picture %>
+          <%= f.input :caption %>
       <% end %>
       </div>
 
