@@ -1,7 +1,7 @@
 <div class="booyah-box col-10 offset-1">
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
-  <br/><br/>
+  <br><br/>
   <p><%= @place.description %></p>
 
   <% if @place.latitude.present? && @place.longitude.present? %>
@@ -73,19 +73,28 @@
 </div>
 
 <div class="col-10 offset-1">
-<button type="button" class="btn btn-secondary btn-lg float-right" data-toggle="modal" data-target="#commentModal">
-  Add a comment
+<button type="button" class="btn btn-secondary btn-lg margin-left" data-toggle="modal" data-target="#commentModal">
+  Add a Comment
+</button>
+<button type="button" class="btn btn-secondary btn-lg margin-left" data-toggle="modal" data-target="#photoModal">
+  Add a Photo
 </button>
 </div>
 
-<button type="button" class="btn btn-secondary btn-lg float-right" data-toggle="modal" data-target="#photoModal">
-  Add a Photo
-</button>
+<div class="clear"></div>
+
+<br>
+<br>
+
+
+<h1 class="float-left">Comments</h1>
+
+<br>
+<br>
 
 <div class="clear"></div>
 
 <div class="row">
-<h1 class="float-left">Comments</h1>
 <% @place.comments.each do |comment| %>
   <div class="col-12 col-sm-6">
   <blockquote>
@@ -124,6 +133,7 @@
   </div>
 </div>
 
+<div class="clear"></div>
 
 <% @place.photos.each do |photo| %>
   <%= image_tag photo.picture.url, class: 'img-fluid' %>
