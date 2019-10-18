@@ -14,17 +14,4 @@
  *= require_self
  */
 
- .img-fluid {
-    position: relative;
-    padding-bottom: 30%;
-    overflow: hidden;
-    width: 30%;
-    height: 300px;
-  }
-  .img-fluid img {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 30%;
-    height: 300px;
-  }
+
