@@ -11,25 +11,25 @@
       </div>
     </div>
     <div class="carousel-item">
-    <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
-    <div class="carousel-caption d-none d-md-block">
+      <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div class="carousel-item">
-    <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
-    <div class="carousel-caption d-none d-md-block">
+     <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+      </div>
     </div>
-  </div>
-  <div class="carousel-item">
-    <%= image_tag 'slider4.jpg', class: 'img-fluid' %>
-    <div class="carousel-caption d-none d-md-block">
-    </div>
-  </div>
     <div class="carousel-item">
-    <%= image_tag 'slider5.jpg', class: 'img-fluid' %>
-    <div class="carousel-caption d-none d-md-block">
+      <%= image_tag 'slider4.jpg', class: 'img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+      </div>
     </div>
-  </div>
+    <div class="carousel-item">
+      <%= image_tag 'slider5.jpg', class: 'img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
   </div>
 
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -62,11 +62,12 @@
         <small><%= place.comments.last.user.email %></small>
       </blockquote>
     </div>
-  <% end %>
+    <% end %>
+  </div>
 
-<%= will_paginate @places %>
 <% end %>
-</div>
+<%= will_paginate @places %>
+
 
 
 
