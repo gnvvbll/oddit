@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: image_url('doodles.png');
+  color: #f3a7a7;
   /* Helvetica/Arial-based sans serif stack */
 font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -35,7 +35,9 @@ font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill
 .navbar-inverse .navbar-brand {
   font-family: 'baskervvilleregular';
   color: #EDDC0E;
-  font-size: 32px;
+  font-weight: bold;
+  font-size: 48px;
+  padding-top: 28px;
 }
 
 .invalid-feedback {
@@ -54,8 +56,9 @@ font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill
   clear: both;
 }
 
+
 blockquote {
-  background: #f9f9f9; 
+  background: #f3efe8; 
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
