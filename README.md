@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application utilizes Ruby 2.5.3, Rails 6.0.0, Amazon Web Services. 
 
-Things you may want to cover:
+At the Home Page, the user can navigate to the "Sign In" or "Sign Up" to create a profile. A modal will appear, where the user can create an account or sign in powered by the Devise gem.
 
-* Ruby version
+From here, the user can create a new post in the navbar link, which will make another form appear. This form requires a name, address, and description. Once the new place is created, the user can add a photo. 
 
-* System dependencies
+The user can navigate to the other spots on the homepage, and from there click a spot and submit a comment and rating, or submit a photo of their own. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The user also has a profile page, where they can see all of the places they've commented on, rated and created. 
